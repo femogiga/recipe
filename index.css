@@ -117,6 +117,10 @@ aside {
 
 }
 
+.rec-list {
+    width: 60%;
+}
+
 .recipe__sect {
     margin-top: 2rem;
 }
