@@ -20,8 +20,8 @@ body {
     font-size: clamp(1rem, calc(1rem + .24vw), 1.2rem);
     overflow-x: hidden;
     max-width: 1600px;
-    font-family: 'Montserrat', sans-serif,'Roboto';
-    word-spacing:.1rem;
+    font-family: 'Montserrat', sans-serif, 'Roboto';
+    /* word-spacing:.1rem; */
 }
 
 .hero {
@@ -259,7 +259,7 @@ li>p:nth-of-type(2) {
     }
 
     .aside-cont {
-        background-color: bisque;
+
         width: 30%;
         font-size: 1rem;
         justify-content: flex-start;
