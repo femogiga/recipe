@@ -1,0 +1,305 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    /* font-size: 1.2rem; */
+    font-size: clamp(1rem, calc(1rem + .24vw), 1.2rem);
+    overflow-x: hidden;
+    max-width: 1600px;
+    font-family: 'Montserrat', sans-serif,'Roboto';
+    word-spacing:.1rem;
+}
+
+.hero {
+    width: 70%;
+    /* padding: 0rem 0 4rem; */
+    padding: 2rem;
+    margin: 0 auto;
+
+
+}
+
+input[type='checkbox'] {
+    width: 1.2rem;
+    aspect-ratio: 1/1;
+    margin-top: 4px;
+}
+
+.container {
+    /* margin: 2rem; */
+    width: 80%;
+    margin: 2rem auto;
+
+}
+
+.header__cont {
+    width: 80%;
+
+}
+
+.header__cont>h1 {
+
+    white-space: nowrap;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.top>p {
+    width: 78%;
+
+}
+
+.top>svg {
+    font-size: 3rem;
+    margin-top: 5px;
+}
+
+
+/* main section starts here */
+.list {
+    display: flex;
+    align-items: flex-start;
+    gap: .7rem;
+    width: 90%;
+    margin-top: 2rem;
+
+
+}
+
+.title__text {
+    margin-top: 0rem;
+
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italics {
+    font-style: oblique;
+}
+
+
+.miniArt>img {
+    width: 2.2rem;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.foraside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.recipe__sect {
+    margin-top: 2rem;
+}
+
+.recipe-cont>div>h2 {
+    margin-bottom: 2rem;
+}
+
+.aside-cont {
+    display: flex;
+    column-gap: 1rem;
+    width: 200%;
+}
+
+.aside-cont h6 {
+    color: rgba(0, 0, 0, .4);
+    margin-bottom: .2rem
+}
+
+.rec-list:nth-of-type(2) {
+    margin-top: 3rem;
+}
+
+#second-list {
+    margin-top: 2rem;
+
+}
+
+#second-list {
+    width: 85%;
+
+}
+
+/* second section start */
+
+.steps {
+    list-style: none;
+}
+
+.steps>li {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+li>p:first-child {
+    padding: .6rem;
+    width: 1.4rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(222, 145, 51);
+    border-radius: 5px;
+}
+
+li>p:nth-of-type(2) {
+    width: 60%;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .hero {
+        width: 80%;
+        /* font-size: 1.1rem; */
+    }
+
+    .header__cont {
+        width: 90%
+    }
+
+    .header__cont>h1 {
+        width: 100%;
+        white-space: nowrap;
+        /* font-size: 2rem; */
+    }
+
+    .container {
+        width: 80%
+    }
+
+    li>p:nth-of-type(2) {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        width: 100%;
+    }
+
+    .header__cont>h1 {
+        width: 80%;
+        font-size: 1.5rem;
+
+    }
+
+    .recipe-cont h2 {
+        font-size: 1.3rem
+    }
+
+
+    .container {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .top>p {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .hero {
+        width: 95%;
+
+    }
+
+    .container {
+        width: 96%;
+    }
+
+    aside {
+        order: -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        column-gap: .4rem;
+        white-space: nowrap;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+    }
+
+
+    .miniArt img {
+        min-width: 1.2rem;
+    }
+
+    .aside-cont {
+        background-color: bisque;
+        width: 30%;
+        font-size: 1rem;
+        justify-content: flex-start;
+        gap: .5rem;
+
+    }
+
+    .aside-cont p {
+        font-size: .9rem;
+
+    }
+
+
+
+    .foraside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    #two {
+        width: 100%;
+    }
+
+    li>p:first-child {
+        padding: .4rem;
+        width: 1.2rem;
+    }
+
+    .list {
+        width: 100%
+    }
+
+    .list p {
+        width: 100%;
+    }
+
+
+
+
+}
